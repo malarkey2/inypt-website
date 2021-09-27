@@ -1,0 +1,136 @@
+<div class="spread-3">
+    <h2 class="spread-3-title">
+        InYPT nurtures a solid research methodology
+    </h2>
+    <div class="spread-3-truthbox">
+        <div class="truthbox-content-wrapper">
+
+            <div class="truthbox-1">
+                <h3 class="spread-3-truthbox-title ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p class=""> FIRST Vivamus sit amet leo a enim lacinia auctor. Suspendisse eu augue non est faucibus efficitur ac sed sapien. Vivamus tincidunt fermentum risus id blandit. 
+                    Phasellus quam sapien, sodales eget velit ut, imperdiet placerat enim. In ut consequat lorem, vitae lacinia diam. Vestibulum non mi a mi tincidunt consequat. 
+                </p>
+            </div>
+            
+            <div class="truthbox-2">
+                <h3 class="spread-3-truthbox-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p class="">SECOND Vivamus sit amet leo a enim lacinia auctor. Suspendisse eu augue non est faucibus efficitur ac sed sapien. Vivamus tincidunt fermentum risus id blandit. 
+                    Phasellus quam sapien, sodales eget velit ut, imperdiet placerat enim. In ut consequat lorem, vitae lacinia diam. Vestibulum non mi a mi tincidunt consequat. 
+                </p>
+            </div>
+            
+
+            <div class="truthbox-3">
+                <h3 class="spread-3-truthbox-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p class="">THIRD Vivamus sit amet leo a enim lacinia auctor. Suspendisse eu augue non est faucibus efficitur ac sed sapien. Vivamus tincidunt fermentum risus id blandit. 
+                    Phasellus quam sapien, sodales eget velit ut, imperdiet placerat enim. In ut consequat lorem, vitae lacinia diam. Vestibulum non mi a mi tincidunt consequat. 
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="truthbox-toggle-buttons">
+        <div id="toggle1" class="truthbox-toggle-btn truthbox-toggle-btn-selected-colors">
+            <div class="truthbox-toggle-btn-img">
+                <img class="truthbox-btn-img-vector" src="/powerpen.svg" alt="powerpen">
+            </div>
+            <div class="truthbox-toggle-btn-text">
+                <p class="truthbox-btn-text-title">
+                    Something
+                </p>
+                <p class="truthbox-btn-text-para">
+                    FIRST PRO
+                </p>
+            </div>
+        </div>
+
+        <div id="toggle2" class="truthbox-toggle-btn center-toggle-btn truthbox-toggle-btn-unselected-colors">
+            <div class="truthbox-toggle-btn-img">
+                <img class="truthbox-btn-img-vector" src="/experimentlab.svg" alt="powerpen">
+            </div>
+            <div class="truthbox-toggle-btn-text">
+                <p class="truthbox-btn-text-title">
+                    Something 2
+                </p>
+                <p class="truthbox-btn-text-para">
+                    SECOND PRO
+                </p>
+            </div>
+        </div>
+
+        <div id="toggle3" class="truthbox-toggle-btn truthbox-toggle-btn-unselected-colors">
+            <div class="truthbox-toggle-btn-img">
+                <img class="truthbox-btn-img-vector" src="/macintosh.svg" alt="powerpen">
+            </div>
+            <div class="truthbox-toggle-btn-text">
+                <p class="truthbox-btn-text-title">
+                    Something 3
+                </p>
+                <p class="truthbox-btn-text-para">
+                    THIRD PRO
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+    //Toggle Buttons
+    const toggle1 = document.getElementById('toggle1');
+    const toggle2 = document.getElementById('toggle2');
+    const toggle3 = document.getElementById('toggle3');
+
+    // Truthbox content selection
+
+    const items1 = document.querySelector(".truthbox-1");
+    const items2 = document.querySelector(".truthbox-2");
+    const items3 = document.querySelector(".truthbox-3");
+
+    toggle1.addEventListener('click', function(){
+            items1.style.display="block"
+            items2.style.display="none"
+            items3.style.display="none"
+
+            toggle1.classList.remove('truthbox-toggle-btn-unselected-colors');
+            toggle1.classList.add('truthbox-toggle-btn-selected-colors')
+
+            toggle2.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle2.classList.add('truthbox-toggle-btn-unselected-colors')
+            toggle3.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle3.classList.add('truthbox-toggle-btn-unselected-colors')
+
+    })
+
+    toggle2.addEventListener('click', function(){
+            items1.style.display="none"
+            items2.style.display="block"
+            items3.style.display="none"
+
+            toggle2.classList.remove('truthbox-toggle-btn-unselected-colors');
+            toggle2.classList.add('truthbox-toggle-btn-selected-colors')
+
+            toggle1.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle1.classList.add('truthbox-toggle-btn-unselected-colors')
+            toggle3.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle3.classList.add('truthbox-toggle-btn-unselected-colors')
+    })
+
+    toggle3.addEventListener('click', function(){
+            items1.style.display="none"
+            items2.style.display="none"
+            items3.style.display="block"
+
+            toggle3.classList.remove('truthbox-toggle-btn-unselected-colors');
+            toggle3.classList.add('truthbox-toggle-btn-selected-colors')
+
+            toggle1.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle1.classList.add('truthbox-toggle-btn-unselected-colors')
+            toggle2.classList.remove('truthbox-toggle-btn-selected-colors');
+            toggle2.classList.add('truthbox-toggle-btn-unselected-colors')
+    })
+
+</script>

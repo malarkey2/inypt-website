@@ -1,0 +1,399 @@
+html, body{
+    background: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+h1, h2, h3, p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR STYLES */
+
+.navbar{
+    position: absolute;
+width: 100%;
+height: 110px;
+left: 0px;
+top: 0px;
+z-index: 1;
+background: #2A2B2A;
+}
+.navbar-content-wrapper{
+    margin: 0 auto;
+    width: 75%;
+    position: relative;
+}
+
+.navbar-logo{
+    scale: 0.75;
+    position: relative;
+    top: 5px;
+    
+}
+
+.navbar-sections-links
+{
+    display: inline;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+
+}
+
+.navbar-section{
+    display: inline;
+    margin: 0 2rem;
+    font-size: 18px;
+}
+
+/* END OF NAVBAR STYLES */
+
+/* HOME PAGE STYLES */
+
+/* Spread 1 */
+.spread-1{
+    
+    
+    width: 100%;
+    padding: 2% 0;
+
+    position: relative;
+    top: 10%;
+    
+    background: #FFFCF3;
+    z-index: 0;
+    
+    
+}
+
+.spread-1-content-wrapper{
+    width: 80%;
+    margin: 130px auto;
+    display: flex;
+}
+
+/* .spread-1-graphic-wrapper, .spread-1-text-wrapper{
+    display: inline-block;
+} */
+
+.spread-1-graphic-wrapper{
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.spread-1-text-wrapper{
+    width: 55%;
+    margin-left: 2rem;
+}
+
+.spread-1-graphic{
+    scale: 1.3;
+}
+
+.spread-1-title{
+    font-weight: 600;
+font-size: 44px;
+line-height: 64px;
+margin: 0%;
+
+}
+
+.spread-1-text{
+    font-weight: normal;
+font-size: 25px;
+
+}
+
+.spread-1-buttons{
+    margin-top: 2rem;
+}
+
+.primary-btn{
+    padding: 3% 5%;
+    background: linear-gradient(113.2deg, #2957F8 -14.73%, rgba(255, 255, 255, 0.15) 132.29%), rgba(159, 0, 163, 0.96);
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+
+.secondary-btn{
+    padding: 3% 5%;
+    margin-left: 2rem;
+    background: #aaaaaa;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+
+}
+
+/* END OF Spread 1 */
+
+/* Spread 2 */
+.spread-2{
+    display: block;
+    text-align: center;
+    
+    padding: 5% 0;
+}
+
+.spread-2-text-wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.spread-2-title{
+    font-family: Poppins;
+margin: 1.5rem 0;
+font-weight: 500;
+font-size: 48px;
+
+}
+
+.spread-2-text{
+    font-family: Poppins;
+    font-size: 20px;
+    
+}
+
+/* Spread 3 */
+.spread-3{
+    /* background: #F0EFEB; */
+    background: #FFFEDC;
+    padding: 2% 0;
+    padding-bottom: 5%;
+
+}
+
+.spread-3-title{
+    font-weight: 500;
+font-size: 36px;
+text-align: center;
+text-shadow: 2px 2px 0px #FF725E;
+
+
+}
+
+
+.spread-3-truthbox{
+    background: #FFFCF3;
+    /* Normal Card State */
+    margin: 2rem auto;
+    padding: 2%;
+    width: 80%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.truthbox-2, .truthbox-3{
+    display: none;
+}
+
+.truthbox-toggle-buttons{
+    width: 84%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.truthbox-toggle-btn{
+    width: 32%;
+    height: 7rem;
+    display: inline-flex;
+
+/* Normal Card State */
+
+box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+
+transition: all 0.3s ease 0s;
+
+}
+
+.truthbox-toggle-btn-unselected-colors{
+    color: #FFFCF3;
+    background: #706C61;
+}
+
+.truthbox-toggle-btn-selected-colors{
+    color: #2A2B2A;
+    background: #F8F4E3;
+    border: solid 1px #777777;
+    scale: 1.05;
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.30);
+}
+
+.truthbox-toggle-btn-unselected-colors:hover{
+    scale: 1.02;
+    background: #49463f;
+}
+
+.center-toggle-btn{
+    margin: 0 1.5%;
+}
+
+.truthbox-toggle-btn-img{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    
+}
+
+.truthbox-btn-img-vector{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.truthbox-toggle-btn-text{
+    width: 50%;
+    display: inline-block;
+    transition: all 0.3s ease 0s;           
+}
+
+.truthbox-btn-text-title{
+font-size: 22px;
+line-height: 36px;
+margin-bottom: 0%;
+
+}
+
+.truthbox-btn-text-para{
+    font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+/* identical to box height */
+
+margin-top: 5px;
+}
+
+/* Spread 4 */
+
+.spread-4{
+    margin: 5rem 0;
+    padding: 5% 0;
+    
+}
+.spread-4-cards{
+    width: 80%;
+    margin: 0% auto;
+    display: flex;
+}
+
+.spread-4-card{
+    height: 25rem;
+    width: 30%;
+    background: #F8F4E3;
+    display: inline-flex;
+/* Card Normal State */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    transition: all 0.3s ease 0s;     
+}
+
+.spread-4-card:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.center-card{
+    margin: 0% 4.5%;
+}
+
+.spread-4-card-img-wrapper{
+    width: 100%;
+    height: 55%;
+}
+
+.spread-4-card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+/* Spread 5 */
+
+.spread-5-timeline-wrapper{
+    width: 50%;
+    margin: 5% auto;
+}
+
+.spread-5-title{
+    font-weight: 500;
+font-size: 44px;
+line-height: 72px;
+text-align: center;
+}
+
+/* Spread 6  */
+
+.spread-6{
+    margin: 5rem 2%;
+    padding: 5% 0;
+    display: flex   ;
+}
+
+.spread-6-text-wrapper{
+    width: 60%;
+    display: inline-block;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.spread-6-title{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 64px;
+    margin: 0%;
+    
+}
+
+.spread-6-text{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.spread-6-graphic-wrapper{
+    width: 25%;
+    display: inline-block;
+}
+
+.spread-6-graphic{
+    max-width: 100%;
+    max-height: 100%;
+}
