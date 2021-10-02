@@ -14,6 +14,16 @@ app.get('/about', (req, res)=>{
   res.render('about');
 })
 
+app.get('/problem', (req, res)=>{
+  res.render('problem');
+})
+
+app.get('/preparing', (req, res)=>{
+  res.render('preparing');
+})
+
+
+
 app.get('/', (req, res) => {
   res.render('index');
 });

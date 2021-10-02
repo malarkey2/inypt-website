@@ -8,6 +8,11 @@ h1, h2, h3, p{
     font-family: 'Poppins', sans-serif;
 }
 
+.page-padding{
+    padding: 5% 15%;
+}
+/* Use while refactoring. All pages have this form of padding */
+
 /* NAVBAR STYLES */
 
 .navbar{
@@ -541,5 +546,144 @@ color: #FFFFFF;
     background: #2A2B2A;
 }
 
+.problem-page-title{
+    font-weight: 300;
+font-size: 48px;
+line-height: 65px;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 3rem;
+}
+
 /* problem card */
+
+.problem-card{
+   width: 90%;
+   margin: 1rem auto;
+padding: 4% 5%;
+   background: #FFFFFF;
+/* Normal Card State */
+
+box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+}
+
+.problem-card-title{
+    font-weight: 500;
+font-size: 26px;
+line-height: 40px;
+}
+
+.problem-card-text{
+    font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+}
+
+.problem-card-subtitle{
+    margin-bottom: 5px;
+    font-weight: 300;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+}
+
+.problem-card-button{
+    margin-top: 10px;
+    width: 110px;
+    height: 30px;
+    background: #0075FF;
+    border-radius: 15px;
+    border: none;
+
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.problem-card-button:hover{
+    background: #50a0fc;
+
+}
+
+
+/* Preparing Page */
+
+.preparing-page-title{
+    padding: 3% 5%;
+    background: #fff6ed;
+
+    font-weight: 500;
+font-size: 56px;
+line-height: 100px;
+
+text-align: center;
+
+
+/* identical to box height */
+color: #424242;
+text-shadow: 4px 4px 0px #E5446D;
+
+}
+
+.preparing-spread-1{
+    margin-bottom: 4rem;
+}
+
+.preparing-spread-1-img{
+    max-width: 100%; 
+    max-height: 100%;
+    margin: auto;
+}
+
+.preparing-spread-1-text-wrapper{
+    margin: auto 0;
+    margin-left: 2rem;
+}
+
+.preparing-spread-1-titles{
+    font-size: 24px;
+    margin: 2rem 0 .5rem 0;
+}
+
+.preparing-step-div{
+    position: relative;
+    width: 90%;
+    padding: 2% 4%;
+    margin: 3rem auto;
+    background: #FFFFED;
+border: 3px solid #000000;
+box-sizing: border-box;
+box-shadow: 7px 8px 0px #000000;
+border-radius: 5px;
+}
+
+.preparing-step-title{
+    font-weight: 500;
+font-size: 30px;
+}
+
+.preparing-step-text{
+    font-size: 20px;
+line-height: 36px;
+}
+
+.preparing-step-button-wrapper{
+    position: absolute;
+    width: 120px;
+    right: -80px;
+    top: -40px;
+}
+
+.preparing-step-button{
+    max-width: 100%; 
+    max-height: 100%;
+    margin: auto;
+}
 
