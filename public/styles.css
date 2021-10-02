@@ -11,61 +11,42 @@ h1, h2, h3, p{
 .page-padding{
     padding: 5% 15%;
 }
+
+@media (max-width: 991.98px) { 
+    .spread-1-graphic{
+        scale: 0.95 !important;
+        margin-bottom: 2rem;
+        margin-left: -1rem;
+    }
+    .spread-1-content-wrapper{
+        width: 100%;
+    }
+    .spread-6-graphic-wrapper{
+        display: none;
+    }
+}
+
 /* Use while refactoring. All pages have this form of padding */
 
 /* NAVBAR STYLES */
 
-.navbar{
-    position: absolute;
-width: 100%;
-height: 110px;
-left: 0px;
-top: 0px;
-z-index: 1;
-background: #2A2B2A;
-}
-.navbar-content-wrapper{
-    margin: 0 auto;
-    width: 75%;
-    position: relative;
-}
 
-.navbar-logo{
-    scale: 0.75;
-    position: relative;
-    top: 5px;
-    
-}
-
-.navbar-sections-links
-{
-    display: inline;
-    color: white;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
-
-}
-
-.navbar-section{
-    display: inline;
-    margin: 0 2rem;
-    font-size: 18px;
-}
 
 /* END OF NAVBAR STYLES */
 
 /* HOME PAGE STYLES */
 
 /* Spread 1 */
+
+
+.nav-item{
+    margin-right: 3rem;
+}
 .spread-1{
     
     
     width: 100%;
-    padding: 2% 0;
+    padding: 1% 0;
 
     position: relative;
     top: 10%;
@@ -78,7 +59,7 @@ background: #2A2B2A;
 
 .spread-1-content-wrapper{
     width: 80%;
-    margin: 130px auto;
+    margin: 70px auto;
     display: flex;
 }
 
@@ -98,20 +79,20 @@ background: #2A2B2A;
 }
 
 .spread-1-graphic{
-    scale: 1.3;
+    scale: 1.18;
 }
 
 .spread-1-title{
     font-weight: 600;
-font-size: 44px;
-line-height: 64px;
-margin: 0%;
+font-size: 40px;
+margin-bottom: 1rem;
+
 
 }
 
 .spread-1-text{
     font-weight: normal;
-font-size: 25px;
+font-size: 20px;
 
 }
 
@@ -121,6 +102,7 @@ font-size: 25px;
 
 .primary-btn{
     padding: 3% 5%;
+    height: 60px;
     background: linear-gradient(113.2deg, #2957F8 -14.73%, rgba(255, 255, 255, 0.15) 132.29%), rgba(159, 0, 163, 0.96);
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
     border-radius: 10px;
@@ -142,6 +124,7 @@ font-size: 25px;
 .secondary-btn{
     padding: 3% 5%;
     margin-left: 2rem;
+    height: 60px;
     background: #aaaaaa;
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.15));
     border-radius: 10px;
@@ -168,7 +151,8 @@ font-size: 25px;
     display: block;
     text-align: center;
     
-    padding: 5% 0;
+    padding: 7% 0;
+  
 }
 
 .spread-2-text-wrapper{
@@ -180,13 +164,13 @@ font-size: 25px;
     font-family: Poppins;
 margin: 1.5rem 0;
 font-weight: 500;
-font-size: 48px;
+font-size: 36px;
 
 }
 
 .spread-2-text{
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 16px;
     
 }
 
@@ -194,8 +178,7 @@ font-size: 48px;
 .spread-3{
     /* background: #F0EFEB; */
     background: #FFFEDC;
-    padding: 2% 0;
-    padding-bottom: 5%;
+    padding: 5% 0;
 
 }
 
@@ -204,6 +187,7 @@ font-size: 48px;
 font-size: 36px;
 text-align: center;
 text-shadow: 2px 2px 0px #FF725E;
+padding: 0 10%;
 
 
 }
@@ -213,10 +197,20 @@ text-shadow: 2px 2px 0px #FF725E;
     background: #FFFCF3;
     /* Normal Card State */
     margin: 2rem auto;
-    padding: 2%;
+    padding: 4%;
     width: 80%;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+}
+
+.spread-3-truthbox-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.spread-3-truthbox-text{
+    font-size: 14px;
+    margin-bottom: 0%;
 }
 
 .truthbox-2, .truthbox-3{
@@ -224,14 +218,20 @@ text-shadow: 2px 2px 0px #FF725E;
 }
 
 .truthbox-toggle-buttons{
-    width: 84%;
-    margin: auto;
-    justify-content: space-evenly;
+    width: 87%;
+    margin: 0% auto;
+    
+}
+
+.toggle-btn-wrapper{
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .truthbox-toggle-btn{
-    width: 32%;
-    height: 7rem;
+    width: 90%;
+    height: 6.5rem;
+    margin: 0 auto;
     display: inline-flex;
 
 /* Normal Card State */
@@ -266,10 +266,11 @@ transition: all 0.3s ease 0s;
 }
 
 .truthbox-toggle-btn-img{
-    width: 35%;
+    width: 115px;
     height: 100%;
     object-fit: cover;
     display: inline-block;
+    text-align: left;
     
 }
 
@@ -281,13 +282,16 @@ transition: all 0.3s ease 0s;
 
 .truthbox-toggle-btn-text{
     width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-left: 1rem;
     display: inline-block;
     transition: all 0.3s ease 0s;           
 }
 
 .truthbox-btn-text-title{
-font-size: 22px;
-line-height: 36px;
+font-size: 18px;
+
 margin-bottom: 0%;
 
 }
@@ -298,7 +302,7 @@ font-size: 11px;
 line-height: 16px;
 /* identical to box height */
 
-margin-top: 5px;
+margin: 5px 0;
 }
 
 /* Spread 4 */
@@ -306,7 +310,7 @@ margin-top: 5px;
 .spread-4{
     margin: 5rem 0;
     padding: 5% 0;
-    
+    margin-bottom: 2rem;
 }
 .spread-4-cards{
     width: 80%;
@@ -315,10 +319,11 @@ margin-top: 5px;
 }
 
 .spread-4-card{
-    height: 25rem;
-    width: 30%;
+    height: 27rem;
+    width: 100%;
     background: #F8F4E3;
-    display: inline-flex;
+    margin: 1rem 0;
+    
 /* Card Normal State */
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -332,13 +337,24 @@ margin-top: 5px;
 
 }
 
-.center-card{
-    margin: 0% 4.5%;
+.spread-4-card-text-wrapper{
+    padding: 5%;
 }
 
+.spread-4-card-title{
+    font-size: 20px;
+}
+
+.spread-4-card-para{
+    font-size: 14px;
+}
+
+
+
 .spread-4-card-img-wrapper{
+    display: block;
     width: 100%;
-    height: 55%;
+    height: 50%;
 }
 
 .spread-4-card-img{
@@ -354,15 +370,22 @@ margin-top: 5px;
 /* Spread 5 */
 
 .spread-5-timeline-wrapper{
-    width: 50%;
-    margin: 5% auto;
+    text-align: center;
+    
+}
+
+.spread-5-timeline{
+    max-width: 80%;
+   
 }
 
 .spread-5-title{
     font-weight: 500;
-font-size: 44px;
+font-size: 36   px;
 line-height: 72px;
 text-align: center;
+
+margin-bottom: 4%;
 }
 
 /* Spread 6  */
@@ -374,7 +397,7 @@ text-align: center;
 }
 
 .spread-6-text-wrapper{
-    width: 60%;
+    width: 100%;
     display: inline-block;
     padding: 5%;
     padding-top: 0%;
@@ -382,20 +405,19 @@ text-align: center;
 
 .spread-6-title{
     font-weight: 600;
-    font-size: 44px;
-    line-height: 64px;
+    font-size: 40px;
     margin: 0%;
+    margin-bottom: 1rem;
     
 }
 
 .spread-6-text{
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .spread-6-graphic-wrapper{
-    width: 25%;
-    display: inline-block;
+    width: 100%;
 }
 
 .spread-6-graphic{
