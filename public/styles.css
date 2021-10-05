@@ -597,6 +597,12 @@ line-height: 27px;
 
 /* Scoresheet table */
 
+.scoresheet-table-wrapper{
+    overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+}
+
 .cell-right-border{
     border-right: solid 1px #DEE2E6;
 }
