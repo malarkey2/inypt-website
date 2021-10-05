@@ -22,6 +22,10 @@ app.get('/preparing', (req, res)=>{
   res.render('preparing');
 })
 
+app.get('/preparing-report', (req, res)=>{
+  res.render('preparing-report')
+})
+
 
 
 app.get('/', (req, res) => {
