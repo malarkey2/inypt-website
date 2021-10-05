@@ -2,6 +2,8 @@ html, body{
     background: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, p{
@@ -46,7 +48,7 @@ h1, h2, h3, p{
 .spread-1{
     
     
-    width: 100%;
+    max-width: 100%;
     padding: 1% 0;
 
     position: relative;
@@ -54,7 +56,8 @@ h1, h2, h3, p{
     
     background: #FFFCF3;
     z-index: 0;
-    
+    overflow-x: hidden;
+
     
 }
 
@@ -75,8 +78,8 @@ h1, h2, h3, p{
 }
 
 .spread-1-text-wrapper{
-    width: 55%;
-    margin-left: 2rem;
+    width: 95%;
+    margin: auto;
 }
 
 .spread-1-graphic{
